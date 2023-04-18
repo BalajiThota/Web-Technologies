@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Bill Generator</title>
+    <link rel="stylesheet" type="text/css" href="style4.css" />
+  </head>
+  <body>
+    <center>
+    <h1 id="h">SUN BURN FESTIVAL</h1>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Number of tickets</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>GOLD PHASE</b></td>
+          <td>2500</td>
+          <td><input type="number" id="l1" min="0" /></td>
+        </tr>
+        <tr>
+          <td><b>PLATINUM PHASE</b></td>
+          <td>6000</td>
+          <td><input type="number" id="l2" min="0" /></td>
+        </tr>
+        <tr>
+          <td><b>BACKSTAGE</b></td>
+          <td>20000</td>
+          <td><input type="number" id="l3" min="0" /></td>
+        </tr>
+        <tr>
+            <td><b>EARLY BIRD</b></td>
+            <td>12000</td>
+            <td><input type="number" id="l4" min="0" /></td>
+          </tr>
+      </tbody>
+    </table>
+    <button onclick="calculateTotal()">Calculate</button>
+    <div class="container">
+      <h1 id="he" style="color: rgb(26, 5, 5);"></h1>
+      <p id ="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p> 
+      <p id="p4"></p>
+      <p id="p11"></p>
+      <p id="g"></p>   
+      <p id="p5"></p>    
+    </div>
+ 
+    <script>
+        
+        function calculateTotal() {
+	let l1= document.getElementById("l1").value;
+	let l2 = document.getElementById("l2").value;
+	let l3 = document.getElementById("l3").value;
+    let l4 = document.getElementById("l4").value;
+
+	let t1 = l1 * 2500;
+	let t2 = l2 * 6000;
+	let t3 = l3 * 20000;
+    let t4 = l4 * 12000;
+    
+	let total = t1 + t2 + t3 + t4;
+    let gst = total*18/100;
+    document.getElementById("he").textContent="Order Details :";
+    if(l1>0){
+        document.getElementById("p1").textContent= l1 +" GOLD PHASE tickets : worth " + t1;
+    }
+    if(l2>0){    
+        document.getElementById("p2").textContent= l2 +" PLATINUM PHASE tickets  : worth " + t2;
+    }
+    if(l3>0){
+        document.getElementById("p3").textContent= l3 +" BACKSTAGE tickets : worth " + t3;
+    }
+    if(l4>0){
+        document.getElementById("p4").textContent= l4 +" EARLY BIRD tickets : worth " + t4;
+    }
+    document.getElementById("p11").textContent="Ticktes Amount:"+total+"/-";
+    document.getElementById("g").textContent="GST :"+gst+"/-";
+    document.getElementById("p5").textContent="Total Bill Amount to be paid:"+(total+gst)+"/-";
+
+}
+
+
+    </script>
+    </center>
+  </body>
+</html>

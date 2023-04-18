@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="Stylesheet" href="forms.css">
+    </head>
+    <body>
+        <h1>REGISTRATION FORM</h1>
+        <h3>Please enter your details</h3>
+        <form name="f1" action="res.php" method="post">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input class='in' type="text" name="nm" placeholder="Enter your first name" max="5" maxlength="30" required="'required">
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input class='in' type="text" name="nm1" placeholder="Enter your last name" max="5" maxlength="30" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input class='in' type="date" name="dob" required="required">
+                </td>
+               
+            </tr>
+            <tr>
+            <td>Identification card</td>
+                <td>
+                    <input class="f" type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td>
+                <input class='in' type="text" name="co" placeholder="Enter mobileno" maxlength="10" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gen" required="required" value="Male">M
+                    <input type="radio" name="Gen" required="required" value="Female">F
+                    <input type="radio" name="Gen" required="required" value="others">Others
+                </td>
+            </tr>
+            <tr>
+                <td>Email Id</td>
+                <td>
+                    <input class='in' type="email" name="em" placeholder="Enter mail id" max="5" maxlength="50" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Languages</td>
+                <td>
+                    <input class='Gen' type="checkbox" name="ck">English
+                    <input class='Gen' type="checkbox" name="ck" >Hindi
+                    <input class='Gen' type="checkbox" name="ck" >Telugu
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input class='in' type="password" name="pwd" placeholder="Enter password" maxlength="12" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="sub"  type="submit" name="submit" onclick="fun()">
+                </td>
+                <td>
+                    <input class="sub" type="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+
+        </form>
+        <script>
+            function fun(){
+                alert("submitted successfully");
+            }
+        </script>
+    </body>
+</html>

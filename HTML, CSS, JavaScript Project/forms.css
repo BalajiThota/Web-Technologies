@@ -1,0 +1,72 @@
+h1,h3{
+    text-align: center;
+    font-family:sans-serif;
+    color: Black;
+}
+.tb{
+background-color:palegoldenrod;
+}
+.lthtml{
+background-color:999ff}
+body{
+    text-align:center;
+    font-weight: 100px;
+    font-family: 'sans-serif';
+    background-image:url("img11.jpg");
+    background-repeat: no-repeat;
+    background-size:2000px 1000px;
+}
+.t1{
+background-color:palegoldenrod;
+margin:auto;}
+td{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+}
+input{
+    border-color:black);
+    background-color:#ffe6ff;
+    padding-bottom:10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-top:10px;
+    font-size:15px;
+    color:darkorchid;
+}
+.Gen{
+    width:auto
+
+}
+.ck{
+    width: auto;
+    height:auto;
+    margin-left:10px;
+    border-color:grey;
+    background-color:antiquewhite;
+    border-width: 3px;
+    text-align: center;
+}
+textarea{
+    margin-left: 10px;
+    border-color:coral;
+    background-color: bisque;
+    border-width:2px;
+}
+.sub{
+    width:175px;
+    font-size: 20px;
+    color:black;
+    height: 25px;
+    background-color:cornsilk;
+    padding-bottom:30px;
+
+}
+.sub:hover,.sub:focus,.sub:visited{
+    background-color:brown;
+}
+.in:hover,.in:focus,.in:visited{
+    background-color:beige;
+}

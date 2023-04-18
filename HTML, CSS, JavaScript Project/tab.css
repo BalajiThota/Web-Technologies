@@ -1,0 +1,15 @@
+table{
+    border-spacing: 0 15px;
+    border-collapse: collapse;
+    width: 75%;
+    height: 50%;
+}
+th,
+td{
+    background-color:beige;
+    text-align:center;
+    padding: 2px;
+    border: 1px solid black;
+    width:150px;
+
+}

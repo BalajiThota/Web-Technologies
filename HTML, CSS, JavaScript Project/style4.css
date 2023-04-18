@@ -1,0 +1,62 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+    background-image: url("img99.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th, td {
+	border: 1px solid whitesmoke;
+	padding: 10px;
+	text-align: center;
+    color:bisque;
+    background-color:black;
+}
+input[type="number"] {
+	width: 50px;
+}
+.container{
+    background-color:white;
+    height:auto;
+    width: auto;
+}
+button {
+    position: center;
+	background-color: white;
+	color: rgb(82, 10, 90);
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+label {
+	font-weight: bold;
+	margin-right: 10px;
+}
+#p1,#p2,#p3,#p4,#p11,#g{
+    color:black;
+    background-color:white;
+    font-size: medium;
+    font-family:'arial';
+}
+#p5{
+    text-align: center;
+    font-style: oblique;
+    font-size:larger;
+    color:yellow;
+    background-color:black;
+}
+#h{
+    text-align: center;
+    font-family: 'Open Sans' ;
+    color: navajowhite;
+    border: solid black;
+}
