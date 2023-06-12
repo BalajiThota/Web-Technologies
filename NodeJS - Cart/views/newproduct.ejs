@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* High class Amazon style */
+    body {
+      background-color: #F7F7F7;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFFFFF;
+      border: 1px solid #DDDDDD;
+      padding: 20px;
+    }
+    label {
+      text-align: left;
+      width: 100%;
+      max-width: 600px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid #DDDDDD;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    input[type="file"] {
+      margin-bottom: 40px;
+    }
+    button[type="submit"] {
+      background-color: #FF9900;
+      border: none;
+      border-radius: 5px;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <%- include('aheader.ejs') %>
+  <div class="container">
+    <h1>Add a Product</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      <label for="category">Category:</label>
+      <input type="category" name="category" id="category">
+      <label for="price">Price:</label>
+      <input type="text" name="price" id="price">
+      <label for="description">Description:</label>
+      <input type="text" name="description" id="description">
+      <label for="image">Image:</label>
+      <input type="file" name="image" id="image">
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

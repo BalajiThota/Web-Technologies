@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <h1>Cart</h1>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header"><b>Shopping Cart</b></div>
+            <div class="card-body">
+                <table class="table">
+                    <form method="POST" action="">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                        <th>Remove</th>
+                    </tr>
+                    <% 
+                    if(products.length > 0)
+                    {
+                        let total = 0;
+                        products.forEach(products => {
+                    %>
+                    <tr>
+                        <td><%= products.name %></td>
+                        <td><%= products.quantity %></td>
+                        <td><%= products.price %></td>
+                        <td><%= parseFloat(products.quantity) * parseFloat(products.price) %></td>
+                        <td><button type="submit" name="id" value="<%= products.id %>" class="btn btn-danger btn-sm">Remove</button></td>
+                    </tr>
+                    <%
+                            total += parseFloat(products.quantity) * parseFloat(products.price);
+                        })
+                    %>
+                    <tr>
+                        <td colspan="3" aling="right"><b>Total</b></td>
+                        <td><%= total %></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <%
+                    }
+                    else
+                    {
+                    %>
+    
+                    <tr>
+                        <td colspan="5" align="center">No Item Found in Cart</td>
+                    </tr>
+    
+                    <%
+                    }
+                    %>
+                </form>
+
+                </table>
+                <form action="" method="POST">
+                    <button type="submit" name="id" value="-100" class="btn btn-danger btn-sm">BUY NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br />
+    
+    </div>
+    </div>
+
+</body>
+
+
+ </html>
+ 

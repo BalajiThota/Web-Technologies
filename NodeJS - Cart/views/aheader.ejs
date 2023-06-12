@@ -1,0 +1,121 @@
+<html lang="en">
+    <head>
+        <title>
+            Shopping Dresses
+        </title>
+    </head>
+    <style>
+        h2{
+            margin-left: -680px;
+            font-size: 30px;
+            color: white;
+        }
+        header {
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        text-align: center;
+        }
+
+        nav ul li {
+        display: inline-block;
+        position: relative;
+        }
+
+        nav a {
+        display: block;
+        padding: 0 10px;
+        color: #fff;
+        line-height: 60px;
+        text-decoration: none;
+        }
+
+        nav ul ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        }
+
+        nav ul li:hover > ul {
+        display: inherit;
+        }
+
+        nav ul ul li {
+        width: 200px;
+        float: none;
+        display: list-item;
+        position: relative;
+        }
+
+        nav ul ul ul li {
+        position: relative;
+        top: -60px;
+        left: 200px;
+        }
+
+        nav a:hover,
+        nav ul ul ul a {
+        background-color: #f3f3f3;
+        color: #2f3036;
+        }
+
+        nav ul ul li:hover > ul {
+        display: inherit;
+        }
+        .icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+}
+
+.fa-search {
+  font-size: 16px;
+}
+ </style>
+ <body>
+    <header>
+            <nav>
+              <ul>
+                <li><h2>ANY THING</h2></li>
+                <li><a href="#">Home</a></li>
+                <li>
+                  <a href="/adash">Admin services &#9662;</a>
+                  <ul class="dropdown">
+                    <li><a href="/newprod">Add new Product</a></li>
+                    <li><a href="/newcat">Add new Category</a></li>
+                    <li><a href="/rmprod">remove Product</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Orders</a>
+                </li>
+
+                  <li class="cart"><a href="/logout"><i class="fas fa-shopping-cart"></i>Logout</a></li>
+                </ul>
+              </nav>   
+            </header>
+ </body>
